@@ -857,7 +857,20 @@ a[href*='tel'], a[href*='mailto'] {
 		margin-top: 40px;
 	}
 }
-
+  .meeting-card {
+    background: #c9c7c7;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+  }
+  .meeting-card:hover {
+    transform: translateY(-5px);
+    border-color: #0d6efd; /* Azul bootstrap */
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  }
+  .meeting-card .icon {
+    font-size: 2.5rem;
+    color: #0d6efd;
+  }
 .service-box {
 	transition: all linear .35s;
 	display: flex;
