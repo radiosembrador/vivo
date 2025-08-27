@@ -204,7 +204,7 @@
 
 			carousel.owlCarousel( {
 				autoplay:           isNoviBuilder ? false : carousel.attr( 'data-autoplay' ) !== 'false',
-				autoplayTimeout:    carousel.attr( "data-autoplay" ) ? Number( carousel.attr( "data-autoplay" ) ) : 3000,
+				autoplayTimeout:    carousel.attr( "data-autoplay" ) ? Number( carousel.attr( "data-autoplay" ) ) : 2000,
 				autoplayHoverPause: true,
 				loop:               isNoviBuilder ? false : carousel.attr( 'data-loop' ) !== 'false',
 				items:              1,

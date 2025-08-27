@@ -705,13 +705,11 @@ a[href*='tel'], a[href*='mailto'] {
 }
 
 .image-left-side {
-	max-width: 80%;
 	margin: 40px auto 0 auto;
 }
 
 @media (min-width: 992px) {
 	.image-left-side {
-		left: calc(50% + 150px);
 		position: absolute;
 		top: 0;
 		height: 75%;
@@ -858,18 +856,19 @@ a[href*='tel'], a[href*='mailto'] {
 	}
 }
   .meeting-card {
-    background: #c9c7c7;
+    background: #ffffff;
     transition: all 0.3s ease;
     border: 2px solid transparent;
   }
+  .meeting-card h5{
+	color: #1f1f1f;
+  }
   .meeting-card:hover {
     transform: translateY(-5px);
-    border-color: #0d6efd; /* Azul bootstrap */
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
   }
   .meeting-card .icon {
     font-size: 2.5rem;
-    color: #0d6efd;
+    color: #150269;
   }
 .service-box {
 	transition: all linear .35s;
@@ -1420,7 +1419,7 @@ img {
 
 .icon-lg {
 	font-size: 48px;
-	color: #505cfd;
+	color: #333333;
 }
 
 .icon-circle {
@@ -6500,7 +6499,7 @@ html.tablet .ui-to-top {
 	top: 0;
 	right: 0;
 	z-index: 1090;
-	background: #404044;
+	background: #0303b8;
 }
 
 .rd-navbar-static .rd-navbar--has-dropdown {
@@ -6892,9 +6891,9 @@ html.tablet .ui-to-top {
 }
 
 .rd-navbar-fixed .rd-navbar-panel {
-	color: #9b9b9b;
-	box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.25);
-	background: #404044;
+	color: #0044cc;
+	box-shadow: 0px 0px 15px #0044cc;
+	background: #0044cc;
 }
 
 .rd-navbar-fixed .rd-navbar-nav-wrap {
