@@ -85,7 +85,7 @@
           </div>
           <!-- Reproductor -->
           <div class="player mt-5 p-4 rounded-2 shadow-lg wow zoomIn">
-            <h2 class="mb-3">📻 Radio El Sembrador</h2>
+            <h2 class="mb-3">Radio Sembrador Online</h2>
 
             <div class="controls d-flex justify-content-center gap-3 mb-3">
               <button id="toggleBtn" class="btn btn-light btn-lg rounded-circle shadow">▶️</button>
@@ -373,26 +373,32 @@
   <script src="js/core.min.js"></script>
   <script src="js/script.js"></script>
   <script>
-    const radio = document.getElementById('radio');
-    const toggleBtn = document.getElementById('toggleBtn');
-    const status = document.getElementById('status');
+  const radio = document.getElementById('radio');
+  const toggleBtn = document.getElementById('toggleBtn');
+  const status = document.getElementById('status');
 
-    toggleBtn.addEventListener('click', () => {
-      if (radio.paused) {
-        radio.load(); // fuerza al navegador a preparar el stream
+  toggleBtn.addEventListener('click', () => {
+    if (radio.paused) {
+      status.textContent = "⏳ Cargando...";
+      toggleBtn.textContent = "⏳";
+      radio.load(); // fuerza carga inicial
+      
+      setTimeout(() => {
         radio.play().then(() => {
           toggleBtn.textContent = "⏸️";
           status.textContent = "🔴 Transmitiendo en vivo";
         }).catch(err => {
           console.error("Error al reproducir:", err);
           status.textContent = "⚠️ Vuelve a presionar Play";
+          toggleBtn.textContent = "▶️";
         });
-      } else {
-        radio.pause();
-        toggleBtn.textContent = "▶️";
-        status.textContent = "⏹️ Detenido";
-      }
-    });
+      }, 1000); // espera 1 segundo antes de reproducir
+    } else {
+      radio.pause();
+      toggleBtn.textContent = "▶️";
+      status.textContent = "⏹️ Detenido";
+    }
+  });
 
 
   </script>
