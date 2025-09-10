@@ -418,11 +418,11 @@
         });
       });
     });
-    if ("serviceWorker" in navigator) {
-      navigator.serviceWorker.register("/sw.js").then(() => {
-        console.log("Service Worker registrado ✅");
-      });
-    }
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("/sw.js")
+    .then(() => console.log("Service Worker registrado ✅"))
+    .catch(err => console.error("Error en SW:", err));
+}
 
     let deferredPrompt;
     const btnInstalar = document.getElementById("btn-instalar");
