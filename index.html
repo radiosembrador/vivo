@@ -64,6 +64,7 @@
               </div>
             </div>
           </div>
+
         </nav>
       </div>
     </header>
@@ -83,18 +84,27 @@
           </div>
           <!-- Reproductor -->
           <div class="player mt-5 p-4 rounded-2 shadow-lg wow zoomIn">
-            <h2 class="mb-3">Radio Sembrador Online</h2>
+            <h2 class="mb-3 text-center">Radio Sembrador Online</h2>
 
             <div class="controls d-flex justify-content-center gap-3 mb-3">
               <button id="toggleBtn" class="btn btn-light btn-lg rounded-circle shadow">▶️</button>
             </div>
 
-            <h5 class="status text-center" id="status">⏹️ Detenido</>
+            <h5 class="status text-center mb-3" id="status">⏹️ Detenido</h5>
 
-              <audio id="radio"
-                src="https://stream-175.zeno.fm/ghjnpuzgmusuv?zt=eyJhbGciOiJIUzI1NiJ9.eyJzdHJlYW0iOiJnaGpucHV6Z211c3V2IiwiaG9zdCI6InN0cmVhbS0xNzUuemVuby5mbSIsInJ0dGwiOjUsImp0aSI6ImlBcUIzcDE4VGl1S3NFRzNpWS1YaWciLCJpYXQiOjE3NTU5MDQzMTcsImV4cCI6MTc1NTkwNDM3N30.B_T6_nl1dPPAa-mqdfHWdfSQl11WNY5CxbnUMABczxo"
-                type="audio/mpeg"></audio>
+            <audio id="radio"
+              src="https://stream-175.zeno.fm/ghjnpuzgmusuv?zt=eyJhbGciOiJIUzI1NiJ9.eyJzdHJlYW0iOiJnaGpucHV6Z211c3V2IiwiaG9zdCI6InN0cmVhbS0xNzUuemVuby5mbSIsInJ0dGwiOjUsImp0aSI6ImlBcUIzcDE4VGl1S3NFRzNpWS1YaWciLCJpYXQiOjE3NTU5MDQzMTcsImV4cCI6MTc1NTkwNDM3N30.B_T6_nl1dPPAa-mqdfHWdfSQl11WNY5CxbnUMABczxo"
+              type="audio/mpeg"></audio>
+
+            <!-- Botón instalar -->
+            <div class="text-center mt-4">
+              <button id="btn-instalar" class="btn btn-success btn-lg px-4 shadow rounded-pill fw-bold"
+                style="display:none;">
+                📲 Descargar App
+              </button>
+            </div>
           </div>
+
 
         </div>
       </div>
@@ -181,7 +191,7 @@
                 <div class="meeting-card text-center p-4 shadow-sm rounded-4 h-100">
                   <span class="icon-lg novi-icon offset-right-10 mercury-icon-time"></span>
                   <h5 class="fw-bold">Miércoles</h5>
-                  <h5 class="fw-bold">18:30 hs
+                  <h5 class="fw-bold">19:00 hs
                     <h5 />
                 </div>
               </div>
@@ -191,7 +201,7 @@
                 <div class="meeting-card text-center p-4 shadow-sm rounded-4 h-100">
                   <span class="icon-lg novi-icon offset-right-10 mercury-icon-time"></span>
                   <h5 class="fw-bold">Sábados</h5>
-                  <h5 class="fw-bold">18:30 hs
+                  <h5 class="fw-bold">19:00 hs
                     <h5 />
                 </div>
               </div>
@@ -201,7 +211,7 @@
                 <div class="meeting-card text-center p-4 shadow-sm rounded-4 h-100">
                   <span class="icon-lg novi-icon offset-right-10 mercury-icon-time"></span>
                   <h5 class="fw-bold">Domingos</h5>
-                  <h5 class="fw-bold">18:30 hs
+                  <h5 class="fw-bold">19:00 hs
                     <h5 />
                 </div>
               </div>
@@ -230,7 +240,7 @@
             <h3 class="wow fadeInLeft text-capitalize text-center" data-wow-delay=".3s">Ultimas<span
                 class="text-primary"> Reflexiones</span></h3>
             <div class="owl-carousel review-carousel" data-items="1" data-sm-items="1" data-md-items="1"
-              data-lg-items="1" data-xl-items="1" data-xxl-items="1" data-dots="true" data-nav="true"
+              data-lg-items="1" data-xl-items="1" data-xxl-items="1" data-dots="true" data-nav="false"
               data-stage-padding="0" data-loop="true" data-margin="20" data-mouse-drag="true" data-autoplay="true"
               data-autoplay-timeout="3000">
               <div class="item">
@@ -242,7 +252,7 @@
                   <!-- Reproductor de audio -->
                   <audio controls>
                     <source
-                      src="audios/Un mensaje que transforma vidas  Programa Punto de Vista – Radio Crisol 93.5.mp3"
+                      src="./audios/Un mensaje que transforma vidas  Programa Punto de Vista – Radio Crisol 93.5.mp3"
                       type="audio/mpeg">
                     Tu navegador no soporta el elemento de audio.
                   </audio>
@@ -258,7 +268,7 @@
                   <p>Anhelando la Presencia de Dios</p>
                   <!-- Reproductor de audio -->
                   <audio controls>
-                    <source src="audios/Anhelando la presencia de Dios🙏🏼🙌🏼.mp3" type="audio/mpeg">
+                    <source src="./audios/Anhelando la presencia de Dios🙏🏼🙌🏼.mp3" type="audio/mpeg">
                     Tu navegador no soporta el elemento de audio.
                   </audio>
                   <div class="item-subsection"><span class="item-subsection-title devider-left">Josele</span><span>Radio
@@ -273,7 +283,7 @@
                   <p>Celebrando el Nacimiento de Jesucristo</p>
                   <!-- Reproductor de audio -->
                   <audio controls>
-                    <source src="audios/¡Celebrando el nacimiento de Jesucristo!.mp3" type="audio/mpeg">
+                    <source src="./audios/¡Celebrando el nacimiento de Jesucristo!.mp3" type="audio/mpeg">
                     Tu navegador no soporta el elemento de audio.
                   </audio>
                   <div class="item-subsection"><span class="item-subsection-title devider-left">Matias
@@ -281,14 +291,14 @@
                 </div>
               </div>
               <div class="item">
-                <div class="item-preview wow fadeInDown" data-wow-delay=".2s"><img src="images/images.png" alt=""
+                <div class="item-preview wow fadeInDown" data-wow-delay=".2s"><img src="./images/images.png" alt=""
                     width="216" height="108" />
                 </div>
                 <div class="item-description wow fadeInUp" data-wow-delay=".3s">
                   <p>Cuando no Tienes Fuerzas, Dios es tu Respuesta</p>
                   <!-- Reproductor de audio -->
                   <audio controls>
-                    <source src="audios/lasantificacion.mp3" type="audio/mpeg">
+                    <source src="./audios/lasantificacion.mp3" type="audio/mpeg">
                     Tu navegador no soporta el elemento de audio.
                   </audio>
                   <div class="item-subsection"><span class="item-subsection-title devider-left">Eliseo
@@ -315,16 +325,16 @@
           </div>
           <div class="col-lg-3 col-sm-8 wow fadeInUp">
             <P class="footer-classic-title">Información</P>
-            <div class="d-block offset-top-0">Avenida Arary<span class="d-lg-block">Barrio Virgen del Pilar</span></div>
-            <a class="d-inline-block accent-link" href="mailto:#">radiosembrador76@gmail.com</a><a class="d-inline-block"
-              href="tel:#"></a>
+            <div class="d-block offset-top-0">Avenida Arary<span class="d-lg-block"> Barrio Virgen del Pilar</span></div>
+            <a class="d-inline-block accent-link" href="mailto:#">radiosembrador76@gmail.com</a><a
+              class="d-inline-block" href="tel:#"></a>
           </div>
           <div class="col-lg-2 col-sm-4 wow fadeInUp" data-wow-delay=".3s">
             <P class="footer-classic-title">Dia de Reuniones</P>
             <ul>
               <li>Miercoles:<span class="d-inline-block offset-left-10 text-white">19:00</span></li>
-              <li>Sábado:<span class="d-inline-block offset-left-10 text-white">18:30</span></li>
-              <li>Domingo:<span class="d-inline-block offset-left-10 text-white">18:30</span></li>
+              <li>Sábado:<span class="d-inline-block offset-left-10 text-white">19:00</span></li>
+              <li>Domingo:<span class="d-inline-block offset-left-10 text-white">19:00</span></li>
             </ul>
           </div>
           <div class="col-lg-4 wow fadeInLeft" data-wow-delay=".2s">
@@ -345,8 +355,10 @@
       </div>
       <div class="container wow fadeInUp" data-wow-delay=".4s">
         <div class="footer-classic-aside">
-          <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span>. Iglesia Asamblea de Dios. Ayolas - Paraguay
-            <a href=""></a></p>
+          <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span>. Iglesia Asamblea de Dios.
+            Ayolas - Paraguay
+            <a href=""></a>
+          </p>
           <ul class="social-links">
             <li><a class="fa fa-linkedin" href="#"></a></li>
             <li><a class="fa fa fa-twitter" href="#"></a></li>
@@ -361,34 +373,73 @@
   <script src="js/core.min.js" defer></script>
   <script src="js/script.js" defer></script>
   <script>
-  const radio = document.getElementById('radio');
-  const toggleBtn = document.getElementById('toggleBtn');
-  const status = document.getElementById('status');
+    const radio = document.getElementById('radio');
+    const toggleBtn = document.getElementById('toggleBtn');
+    const status = document.getElementById('status');
 
-  toggleBtn.addEventListener('click', () => {
-    if (radio.paused) {
-      status.textContent = "⏳ Cargando...";
-      toggleBtn.textContent = "⏳";
-      radio.load(); // fuerza carga inicial
-      
-      setTimeout(() => {
-        radio.play().then(() => {
-          toggleBtn.textContent = "⏸️";
-          status.textContent = "🔴 Transmitiendo en vivo";
-        }).catch(err => {
-          console.error("Error al reproducir:", err);
-          status.textContent = "⚠️ Vuelve a presionar Play";
-          toggleBtn.textContent = "▶️";
+    toggleBtn.addEventListener('click', () => {
+      if (radio.paused) {
+        status.textContent = "⏳ Cargando...";
+        toggleBtn.textContent = "⏳";
+        radio.load(); // fuerza carga inicial
+
+        setTimeout(() => {
+          radio.play().then(() => {
+            toggleBtn.textContent = "⏸️";
+            status.textContent = "🔴 Transmitiendo en vivo";
+          }).catch(err => {
+            console.error("Error al reproducir:", err);
+            status.textContent = "⚠️ Vuelve a presionar Play";
+            toggleBtn.textContent = "▶️";
+          });
+        }, 1000); // espera 1 segundo antes de reproducir
+      } else {
+        radio.pause();
+        toggleBtn.textContent = "▶️";
+        status.textContent = "⏹️ Detenido";
+      }
+    });
+
+    //pausa los demas audios al reproducir uno
+    document.addEventListener("DOMContentLoaded", function () {
+      const audios = document.querySelectorAll("audio");
+
+      audios.forEach(audio => {
+        audio.addEventListener("play", function () {
+          audios.forEach(otherAudio => {
+            if (otherAudio !== audio) {
+              otherAudio.pause();
+            }
+          });
         });
-      }, 1000); // espera 1 segundo antes de reproducir
-    } else {
-      radio.pause();
-      toggleBtn.textContent = "▶️";
-      status.textContent = "⏹️ Detenido";
-    }
-  });
+      });
+    });
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("/sw.js")
+    .then(() => console.log("Service Worker registrado ✅"))
+    .catch(err => console.error("Error en SW:", err));
+}
 
+    let deferredPrompt;
+    const btnInstalar = document.getElementById("btn-instalar");
 
+    window.addEventListener("beforeinstallprompt", (e) => {
+      e.preventDefault();
+      deferredPrompt = e;
+      btnInstalar.style.display = "inline-block";
+    });
+
+    btnInstalar.addEventListener("click", async () => {
+      if (deferredPrompt) {
+        deferredPrompt.prompt();
+        const { outcome } = await deferredPrompt.userChoice;
+        if (outcome === "accepted") {
+          console.log("Usuario instaló la app ✅");
+        }
+        deferredPrompt = null;
+        btnInstalar.style.display = "none";
+      }
+    });
   </script>
   <!--coded by Drel-->
 </body>
