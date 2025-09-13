@@ -31,6 +31,49 @@
     html.lt-ie-10 .ie-panel {
       display: block;
     }
+    /* Texto grande en pantallas grandes */
+h1 .big {
+  font-size: 6rem; /* Radio */
+}
+
+h1 .biggest {
+  font-size: 8rem; /* Sembrador */
+}
+
+.decorated-subtitle {
+  font-size: 1.5rem;
+}
+
+/* Ajustes para tablets */
+@media (max-width: 991px) {
+  h1 .big {
+    font-size: 3rem;
+  }
+
+  h1 .biggest {
+    font-size: 3.5rem;
+  }
+
+  .decorated-subtitle {
+    font-size: 1.2rem;
+  }
+}
+
+/* Ajustes para móviles */
+@media (max-width: 576px) {
+  h1 .big {
+    font-size: 4rem;
+  }
+
+  h1 .biggest {
+    font-size: 3.5rem;
+  }
+
+  .decorated-subtitle {
+    font-size: 1rem;
+  }
+}
+
   </style>
 </head>
 
